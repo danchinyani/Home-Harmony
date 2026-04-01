@@ -53,9 +53,8 @@ This ensures responses are both **accurate and safe**.
 
 ## Installation and Setup
 
-###1. Clone the repository
-
 ```bash
+1. Clone the repository
 git clone https://github.com/danchinyani/Home-Harmony.git
 cd Home-Harmony
 
@@ -79,7 +78,7 @@ npm run dev
 http://localhost:3000
 ```
 
-How the System Works
+How the System Works:
 -User enters a cleaning-related query
 -System validates the query domain
 -Knowledge base is searched for relevant results
@@ -87,7 +86,7 @@ How the System Works
 -Ollama enhances the response (if required)
 -Final answer is displayed to the user
 
-Important Notes
+Important Notes:
 -This system is limited to domestic cleaning queries only
 -Non-cleaning queries are intentionally rejected
 -AI functionality depends on Ollama
