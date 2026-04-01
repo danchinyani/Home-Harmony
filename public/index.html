@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Harmony — Cleaning & Surface Care</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo">HH</div>
+        <div>
+          <h1>Home Harmony</h1>
+          <p class="subtitle">Knowledge-Based Cleaning Assistant</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#room-guides">Rooms</a>
+        <a href="#common-problems">Problems</a>
+        <a href="#chat">Ask AI</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Safe, smarter cleaning advice.</h2>
+        <p>
+          Home Harmony combines a structured cleaning knowledge base,
+          rule-based safety checks, and a local AI model to provide
+          grounded domestic cleaning guidance.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn btn-primary" onclick="scrollToChat()">Ask a question</button>
+          <button class="btn btn-secondary" onclick="prefillChat('Create a simple weekly cleaning routine for a student flat.')">
+            Build a routine
+          </button>
+        </div>
+
+        <div class="hero-badges">
+          <span class="badge">Knowledge Base</span>
+          <span class="badge">Safety Rules</span>
+          <span class="badge">Local AI</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Quick questions</h3>
+        <p class="muted">Try one of these:</p>
+        <div class="quick-qs">
+          <button class="pill" onclick="prefillChat('How do I clean stainless steel appliances safely?')">Stainless steel</button>
+          <button class="pill" onclick="prefillChat('How do I remove limescale from shower glass?')">Limescale</button>
+          <button class="pill" onclick="prefillChat('How do I clean an air fryer basket safely?')">Air fryer</button>
+          <button class="pill" onclick="prefillChat('Can I mix bleach and vinegar?')">Chemical safety</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROOM GUIDES -->
+    <section id="room-guides" class="section">
+      <div class="section-head">
+        <h2>Cleaning by Room</h2>
+        <p class="muted">Choose a room and ask a targeted question.</p>
+      </div>
+
+      <div class="grid cards">
+        <article class="card">
+          <img src="/images/kitchen.avif" alt="Kitchen cleaning">
+          <div class="card-body">
+            <h3>Kitchen</h3>
+            <p>Appliances, grease, worktops, sinks, bins, and food-safe surfaces.</p>
+            <div class="card-actions">
+              <button class="btn btn-primary" onclick="prefillChat('How do I clean my kitchen surfaces safely?')">Ask about Kitchen</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="/images/bathroom.avif" alt="Bathroom cleaning">
+          <div class="card-body">
+            <h3>Bathroom</h3>
+            <p>Limescale, mould, shower glass, taps, toilets, and tiles.</p>
+            <div class="card-actions">
+              <button class="btn btn-primary" onclick="prefillChat('How do I remove limescale from bathroom taps and shower glass?')">Ask about Bathroom</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="/images/livingroom.avif" alt="Living room cleaning">
+          <div class="card-body">
+            <h3>Living Room</h3>
+            <p>Dust, upholstery, wooden furniture, and screens.</p>
+            <div class="card-actions">
+              <button class="btn btn-primary" onclick="prefillChat('How do I reduce dust in my living room?')">Ask about Living Room</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="/images/bedroom.avif" alt="Bedroom cleaning">
+          <div class="card-body">
+            <h3>Bedroom</h3>
+            <p>Bedding, mattresses, wardrobes, desks, and allergens.</p>
+            <div class="card-actions">
+              <button class="btn btn-primary" onclick="prefillChat('What is a simple bedroom cleaning routine?')">Ask about Bedroom</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CHAT -->
+    <section id="chat" class="chat-section">
+      <div class="section-head">
+        <h2>Ask Home Harmony</h2>
+        <p class="muted">
+          Type a question, upload an image, or use voice input.
+        </p>
+      </div>
+
+      <div class="chat-shell">
+        <div class="chat-toolbar">
+          <button type="button" id="clearHistoryBtn" class="clear-history-btn">Clear history</button>
+        </div>
+
+        <div id="chatHistory" class="chat-history"></div>
+
+        <form id="chatForm" class="chatgpt-bar" enctype="multipart/form-data">
+          <label for="photo" class="bar-icon left-icon" title="Upload image">+</label>
+          <input type="file" id="photo" name="image" accept="image/*" hidden />
+
+          <input
+            id="message"
+            name="message"
+            type="text"
+            placeholder="Message Home Harmony..."
+            autocomplete="off"
+          />
+
+          <button type="button" id="startVoiceBtn" class="bar-icon right-icon" title="Voice input">🎤</button>
+          <button type="submit" id="submitBtn" class="bar-send" title="Send">↑</button>
+        </form>
+
+        <div class="file-row">
+          <div id="fileName" class="file-note"></div>
+          <button type="button" id="removePhotoBtn" class="remove-photo-btn" style="display: none;">
+            Remove image
+          </button>
+        </div>
+
+        <div id="statusMessage" class="status-message"></div>
+
+        <div id="responseBox" class="assistant-bubble" style="display: none;">
+          <div id="responseMeta" class="response-meta"></div>
+          <div id="responseContent" class="assistant-text"></div>
+
+          <div class="response-actions">
+            <button type="button" id="speakResponseBtn" class="speak-btn" style="display: none;">
+              🔊 Read response aloud
+            </button>
+            <button type="button" id="helpfulBtn" class="feedback-btn">👍 Helpful</button>
+            <button type="button" id="notHelpfulBtn" class="feedback-btn">👎 Not helpful</button>
+          </div>
+        </div>
+      </div>
+
+      <textarea id="transcript" name="transcript" hidden></textarea>
+    </section>
+
+    <!-- COMMON PROBLEMS -->
+    <section id="common-problems" class="section">
+      <div class="section-head">
+        <h2>Common Cleaning Problems</h2>
+        <p class="muted">Quick routes into the knowledge base.</p>
+      </div>
+
+      <div class="grid tasks">
+        <article class="task">
+          <div class="task-icon">✨</div>
+          <div class="task-content">
+            <h3>Streak-free glass</h3>
+            <p class="muted">Windows, mirrors, and shower glass.</p>
+            <button class="link" onclick="prefillChat('How do I clean glass windows without streaks?')">Ask Home Harmony →</button>
+          </div>
+        </article>
+
+        <article class="task">
+          <div class="task-icon">🧽</div>
+          <div class="task-content">
+            <h3>Grease build-up</h3>
+            <p class="muted">Air fryers, ovens, and kitchen surfaces.</p>
+            <button class="link" onclick="prefillChat('How do I remove grease from an air fryer basket?')">Ask Home Harmony →</button>
+          </div>
+        </article>
+
+        <article class="task">
+          <div class="task-icon">🚿</div>
+          <div class="task-content">
+            <h3>Limescale</h3>
+            <p class="muted">Showerheads, taps, and shower glass.</p>
+            <button class="link" onclick="prefillChat('How do I descale a showerhead safely?')">Ask Home Harmony →</button>
+          </div>
+        </article>
+
+        <article class="task">
+          <div class="task-icon">⚠️</div>
+          <div class="task-content">
+            <h3>Safety checks</h3>
+            <p class="muted">Chemical combinations and safe practice.</p>
+            <button class="link" onclick="prefillChat('What household cleaning chemicals should never be mixed?')">Ask Home Harmony →</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>Home Harmony — Knowledge-Based Intelligent Cleaning Assistant</small>
+      <small class="muted">Local AI + Domestic Science Knowledge Base</small>
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

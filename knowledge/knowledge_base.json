@@ -1,0 +1,936 @@
+{
+  "kb_version": "3.0",
+  "domain": "domestic_science_cleaning",
+  "last_updated": "2026-01-22",
+  "records": [
+    {
+      "id": "cleaning.glass.windows.streakfree",
+      "title": "Cleaning glass windows without streaks",
+      "category": "cleaning",
+      "room": "general",
+      "surface": "glass",
+      "intent": "clean_surface",
+      "object_type": "window",
+      "material": "glass",
+      "applies_when": [
+        "streaks on windows",
+        "dirt on glass windows",
+        "smears on windows"
+    ],
+    "problem": "streaks and dirt on windows",
+    "tags": ["glass", "windows", "streak-free", "vinegar", "microfiber"],
+    "instructions": [
+        "Remove loose dust with a dry microfiber cloth.",
+        "Mix equal parts white vinegar and warm water in a spray bottle.",
+        "Spray lightly onto the glass surface.",
+        "Wipe in an S-shaped motion using a clean microfiber cloth.",
+        "Buff dry with a second dry microfiber cloth."
+  ],
+      "dos": ["Use microfiber cloths", "Clean from top to bottom", "Work in shade where possible"],
+      "donts": ["Do not use abrasive pads", "Do not clean in direct sunlight if possible"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": ["Never mix vinegar with bleach-based products."]
+      },
+      "source": "General household cleaning guidance",
+      "confidence": 0.92
+    },
+
+    {
+  "id": "cleaning.upholstery.fabric_couch.stains",
+  "title": "Cleaning a fabric couch with visible dirt or stains",
+  "problem": "visible stains and dirt on fabric upholstery",
+  "surface": "couch",
+  "room": "living room",
+  "category": "upholstery",
+  "intent": "cleaning",
+  "object_type": "upholstery",
+  "material": "fabric",
+  "tags": ["couch", "sofa", "fabric sofa", "upholstery", "stains", "dirt"],
+  "applies_when": ["fabric couch is stained", "sofa has visible dirt", "upholstery needs spot cleaning"],
+  "instructions": [
+    "Vacuum the couch thoroughly to remove loose dust and debris.",
+    "Blot stained areas gently with a clean cloth.",
+    "Use a mild upholstery-safe cleaner on affected areas.",
+    "Test any cleaner on a small hidden area first.",
+    "Allow the couch to dry fully before use."
+  ],
+  "dos": [
+    "Use upholstery-safe products",
+    "Blot rather than scrub aggressively",
+    "Check the care label if available"
+  ],
+  "donts": [
+    "Do not soak the fabric",
+    "Do not use bleach unless manufacturer guidance allows it",
+    "Do not scrub harshly"
+  ],
+  "safety": {
+    "warnings": [
+      "Test cleaning products on a hidden area first",
+      "Ensure the room is ventilated while cleaning"
+    ]
+  },
+  "confidence": 8
+},
+
+    {
+      "id": "cleaning.mirror.smears",
+      "title": "Cleaning mirrors without smears",
+      "category": "cleaning",
+      "room": "general",
+      "surface": "mirror",
+      "problem": "smears and marks on a mirror",
+      "tags": ["mirror", "smears", "glass", "streaks"],
+      "instructions": [
+        "Dust the mirror lightly before applying cleaner.",
+        "Spray cleaner onto a cloth rather than directly onto the mirror if possible.",
+        "Wipe evenly with a lint-free or microfiber cloth.",
+        "Buff dry to remove smears."
+      ],
+      "dos": ["Use a lint-free cloth", "Buff dry afterwards"],
+      "donts": ["Do not oversaturate mirror edges"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": []
+      },
+      "source": "General household cleaning guidance",
+      "confidence": 0.84
+    },
+    {
+      "id": "cleaning.stainless_steel.appliances.fingerprints",
+      "title": "Cleaning stainless steel appliances safely",
+      "category": "cleaning",
+      "room": "kitchen",
+      "surface": "stainless_steel",
+      "problem": "fingerprints and smudges on stainless steel appliances",
+      "tags": ["stainless steel", "appliances", "fingerprints", "smudges", "grain"],
+      "instructions": [
+        "Wipe the surface with a soft cloth dampened with warm water and mild dish soap.",
+        "Remove soap residue with a clean damp cloth.",
+        "Dry immediately with a microfiber cloth.",
+        "Polish in the direction of the grain."
+      ],
+      "dos": ["Follow the grain of the steel", "Dry immediately after cleaning"],
+      "donts": ["Do not use steel wool", "Do not use bleach or chlorine-based cleaners"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": ["Abrasive materials may scratch the finish."]
+      },
+      "source": "Appliance-safe cleaning practice",
+      "confidence": 0.9
+    },
+    {
+        "id": "cleaning.nonstick.airfryer.basket",
+        "title": "Cleaning an air fryer basket safely",
+        "category": "cleaning",
+        "room": "kitchen",
+        "surface": "nonstick",
+        "intent": "clean_appliance",
+        "object_type": "air_fryer_basket",
+        "material": "nonstick",
+        "applies_when": [
+      "grease in air fryer basket",
+      "burnt residue in air fryer",
+      "clean air fryer basket"
+    ],
+      "problem": "grease and burnt residue in an air fryer basket",
+      "tags": ["air fryer", "non-stick", "basket", "grease", "burnt residue"],
+      "instructions": [
+        "Unplug the air fryer and allow it to cool completely.",
+        "Remove the basket and tray and discard loose crumbs.",
+        "Soak removable parts in warm water with mild dish soap for 10 to 20 minutes.",
+        "Use a soft sponge or nylon brush to clean away grease.",
+        "For stubborn residue, apply a paste of baking soda and water, leave for 10 minutes, then gently scrub.",
+        "Rinse thoroughly and dry fully before reassembling."
+    ],
+    "dos": ["Use mild soap", "Use a soft sponge or nylon brush", "Dry parts fully before reuse"],
+    "donts": ["Do not use steel wool", "Do not scratch the non-stick coating", "Do not immerse the main electrical unit in water"],
+    "safety": {
+      "risk_level": "medium",
+      "warnings": ["Always unplug before cleaning.", "Avoid water contact with electrical parts."]
+      },
+       "source": "Appliance-safe cleaning guidance",
+       "confidence": 0.92
+    },
+    {
+      "id": "cleaning.oven.glass.door",
+      "title": "Cleaning oven door glass",
+      "category": "cleaning",
+      "room": "kitchen",
+      "surface": "oven_glass",
+      "problem": "grease and baked-on marks on oven door glass",
+      "tags": ["oven", "glass", "grease", "baked-on residue"],
+      "instructions": [
+        "Ensure the oven is fully switched off and cool.",
+        "Wipe away loose crumbs and residue.",
+        "Apply a paste of baking soda and water to greasy areas.",
+        "Leave for 10 to 15 minutes.",
+        "Wipe away with a damp non-abrasive cloth.",
+        "Buff the glass dry."
+      ],
+      "dos": ["Allow the oven to cool first", "Use non-abrasive cloths"],
+      "donts": ["Do not use metal scourers", "Do not apply excessive water near electrical areas"],
+      "safety": {
+        "risk_level": "medium",
+        "warnings": ["Ensure oven is cool before cleaning."]
+      },
+      "source": "Kitchen appliance cleaning guidance",
+      "confidence": 0.88
+    },
+    {
+      "id": "cleaning.hob.glass_ceramic",
+      "title": "Cleaning a glass or ceramic hob",
+      "category": "cleaning",
+      "room": "kitchen",
+      "surface": "glass_ceramic_hob",
+      "problem": "burn marks, grease, and food residue on hob",
+      "tags": ["hob", "glass hob", "ceramic hob", "grease", "burn marks"],
+      "instructions": [
+        "Allow the hob to cool completely unless manufacturer guidance states otherwise.",
+        "Wipe away loose crumbs with a soft cloth.",
+        "Apply a hob-safe cleaner or mild dish soap solution.",
+        "Use a soft cloth or non-abrasive pad to loosen residue.",
+        "Wipe clean with a damp cloth.",
+        "Dry and buff with a clean microfiber cloth."
+      ],
+      "dos": ["Use products intended for glass or ceramic hobs", "Use soft cloths"],
+      "donts": ["Do not use abrasive scouring pads", "Do not scrape with sharp metal tools unless using a proper hob scraper correctly"],
+      "safety": {
+        "risk_level": "medium",
+        "warnings": ["Ensure the hob is switched off before cleaning."]
+      },
+      "source": "Kitchen surface cleaning guidance",
+      "confidence": 0.87
+    },
+    {
+      "id": "cleaning.kettle.limescale",
+      "title": "Descaling a kettle safely",
+      "category": "cleaning",
+      "room": "kitchen",
+      "surface": "kettle",
+      "problem": "limescale build-up inside a kettle",
+      "tags": ["kettle", "limescale", "descale", "vinegar"],
+      "instructions": [
+        "Fill the kettle halfway with equal parts water and white vinegar.",
+        "Leave the solution to sit for 20 to 30 minutes.",
+        "Pour it away and rinse several times with clean water.",
+        "Boil fresh water once or twice and discard before normal use."
+      ],
+      "dos": ["Rinse thoroughly after descaling"],
+      "donts": ["Do not leave strong descaling solutions in contact longer than needed"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": ["Rinse well before boiling drinking water."]
+      },
+      "source": "Household descaling guidance",
+      "confidence": 0.86
+    },
+    {
+      "id": "cleaning.fridge.safe",
+      "title": "Cleaning a fridge safely",
+      "category": "cleaning",
+      "room": "kitchen",
+      "surface": "fridge_interior",
+      "problem": "food residue and odours inside fridge",
+      "tags": ["fridge", "food-safe", "odours", "kitchen appliance"],
+      "instructions": [
+        "Remove food items and shelves.",
+        "Wash shelves and drawers with warm water and mild dish soap.",
+        "Wipe the fridge interior with a soft cloth and mild solution.",
+        "Dry all parts fully before replacing food."
+      ],
+      "dos": ["Use food-safe cleaning methods", "Discard expired food during cleaning"],
+      "donts": ["Do not use strong chemical odour cleaners inside food storage spaces"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": ["Ensure surfaces are dry before returning food."]
+      },
+      "source": "Appliance-safe hygiene guidance",
+      "confidence": 0.86
+    },
+    {
+      "id": "cleaning.microwave.interior",
+      "title": "Cleaning a microwave interior",
+      "category": "cleaning",
+      "room": "kitchen",
+      "surface": "microwave",
+      "problem": "food splashes and odours inside microwave",
+      "tags": ["microwave", "food splashes", "odour", "kitchen"],
+      "instructions": [
+        "Ensure the microwave is switched off.",
+        "Wipe loose crumbs first.",
+        "Use a bowl of warm water with lemon slices or mild detergent solution to loosen residue if needed.",
+        "Wipe interior surfaces with a soft cloth.",
+        "Dry thoroughly."
+      ],
+      "dos": ["Use soft cloths", "Clean spills promptly"],
+      "donts": ["Do not use abrasive pads"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": ["Do not allow liquid to enter vents."]
+      },
+      "source": "Kitchen appliance cleaning practice",
+      "confidence": 0.83
+    },
+    {
+      "id": "cleaning.worktops.general_kitchen",
+      "title": "Cleaning kitchen worktops safely",
+      "category": "cleaning",
+      "room": "kitchen",
+      "surface": "worktop",
+      "problem": "food residue and everyday dirt on kitchen worktops",
+      "tags": ["worktop", "countertop", "kitchen surface", "food-safe"],
+      "instructions": [
+        "Remove crumbs and loose debris first.",
+        "Wipe with warm water and mild dish soap using a soft cloth.",
+        "Rinse with a clean damp cloth.",
+        "Dry using a clean towel or microfiber cloth."
+      ],
+      "dos": ["Use food-safe cleaning methods", "Wipe surfaces after preparing raw foods"],
+      "donts": ["Do not use harsh chemicals on food preparation surfaces unless suitable and rinsed correctly"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": ["Rinse thoroughly if any cleaning product is used on food-contact surfaces."]
+      },
+      "source": "Kitchen hygiene best practice",
+      "confidence": 0.85
+    },
+    {
+      "id": "cleaning.sink.stainless",
+      "title": "Cleaning a stainless steel sink",
+      "category": "cleaning",
+      "room": "kitchen",
+      "surface": "stainless_steel_sink",
+      "problem": "soap marks, food residue, and dullness in sink",
+      "tags": ["sink", "stainless steel", "kitchen sink"],
+      "instructions": [
+        "Rinse away food debris first.",
+        "Apply mild dish soap and warm water using a soft sponge.",
+        "Rinse thoroughly.",
+        "Dry and buff following the steel grain."
+      ],
+      "dos": ["Rinse after washing dishes", "Dry to reduce water marks"],
+      "donts": ["Do not use steel wool"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": ["Avoid abrasives on polished finishes."]
+      },
+      "source": "Kitchen sink care guidance",
+      "confidence": 0.82
+    },
+    {
+      "id": "cleaning.tiles.bathroom",
+      "title": "Cleaning bathroom tiles and grout",
+      "category": "cleaning",
+      "room": "bathroom",
+      "surface": "tiles_and_grout",
+      "problem": "soap scum, mildew, and dirt on tiles and grout",
+      "tags": ["bathroom", "tiles", "grout", "soap scum", "mildew"],
+      "instructions": [
+        "Open a window or use ventilation before cleaning.",
+        "Apply warm water with mild detergent or a tile-safe cleaner.",
+        "Scrub grout gently with a soft brush.",
+        "Rinse thoroughly with clean water.",
+        "Dry surfaces to reduce future mould growth."
+      ],
+      "dos": ["Ventilate the room", "Dry surfaces after cleaning"],
+      "donts": ["Do not use metal brushes on grout", "Do not mix multiple cleaning chemicals"],
+      "safety": {
+        "risk_level": "medium",
+        "warnings": ["Use gloves if skin is sensitive.", "Good ventilation is important when cleaning bathrooms."]
+      },
+      "source": "Bathroom cleaning guidance",
+      "confidence": 0.88
+    },
+    {
+      "id": "cleaning.shower_glass.limescale",
+      "title": "Removing limescale from shower glass",
+      "category": "cleaning",
+      "room": "bathroom",
+      "surface": "glass",
+      "problem": "limescale and water marks on shower screen",
+      "tags": ["limescale", "shower glass", "water marks", "bathroom glass"],
+      "instructions": [
+        "Spray the glass with a vinegar and water solution or a limescale-safe cleaner.",
+        "Leave the solution on for a few minutes.",
+        "Wipe with a soft sponge or microfiber cloth.",
+        "Rinse thoroughly with clean water.",
+        "Dry the glass to reduce future water spotting."
+      ],
+      "dos": ["Dry shower glass after use", "Clean regularly to prevent heavy limescale build-up"],
+      "donts": ["Do not use abrasive pads on coated glass"],
+      "safety": {
+        "risk_level": "medium",
+        "warnings": ["Never mix vinegar-based cleaners with bleach."]
+      },
+      "source": "Bathroom descaling guidance",
+      "confidence": 0.9
+    },
+    {
+      "id": "cleaning.tap.chrome.limescale",
+      "title": "Cleaning chrome taps with limescale",
+      "category": "cleaning",
+      "room": "bathroom",
+      "surface": "chrome",
+      "problem": "limescale on chrome taps",
+      "tags": ["chrome taps", "limescale", "bathroom taps"],
+      "instructions": [
+        "Wipe the taps with a soft cloth soaked in a mild vinegar solution or appropriate limescale remover.",
+        "Leave briefly if needed.",
+        "Wipe clean and rinse well.",
+        "Dry with a microfiber cloth."
+      ],
+      "dos": ["Dry taps after use where possible"],
+      "donts": ["Do not use abrasive scourers"],
+      "safety": {
+        "risk_level": "medium",
+        "warnings": ["Avoid prolonged contact with acidic solutions on delicate finishes."]
+      },
+      "source": "Bathroom descaling guidance",
+      "confidence": 0.84
+    },
+    {
+      "id": "cleaning.toilet.general",
+      "title": "Cleaning a toilet hygienically",
+      "category": "cleaning",
+      "room": "bathroom",
+      "surface": "toilet",
+      "problem": "hygienic cleaning of toilet bowl and exterior",
+      "tags": ["toilet", "bathroom hygiene", "disinfect"],
+      "instructions": [
+        "Apply toilet cleaner to the bowl and allow it to sit as directed.",
+        "Scrub the bowl using a toilet brush.",
+        "Wipe exterior surfaces with a separate cloth and suitable cleaner.",
+        "Dispose of cleaning materials appropriately and wash hands."
+      ],
+      "dos": ["Use separate cleaning cloths for toilet areas", "Wash hands after cleaning"],
+      "donts": ["Do not use the same cloth for other bathroom surfaces"],
+      "safety": {
+        "risk_level": "medium",
+        "warnings": ["Use gloves where appropriate.", "Ensure ventilation when using strong cleaners."]
+      },
+      "source": "Bathroom hygiene practice",
+      "confidence": 0.83
+    },
+    {
+      "id": "cleaning.mould.bathroom.walls",
+      "title": "Treating bathroom mould safely",
+      "category": "cleaning",
+      "room": "bathroom",
+      "surface": "painted_wall_or_sealant",
+      "problem": "visible mould on bathroom surfaces",
+      "tags": ["mould", "bathroom", "sealant", "walls", "ventilation"],
+      "instructions": [
+        "Open windows or switch on extraction before cleaning.",
+        "Wear gloves and avoid direct contact with mould.",
+        "Apply an appropriate mould-cleaning product or diluted vinegar if suitable.",
+        "Gently wipe or scrub the affected area.",
+        "Dispose of used cloths safely and wash hands afterwards.",
+        "Improve ventilation and reduce moisture to prevent recurrence."
+      ],
+      "dos": ["Use ventilation", "Address moisture and condensation problems", "Dry surfaces regularly"],
+      "donts": ["Do not mix mould removers with other chemicals", "Do not ignore repeated mould growth without addressing moisture source"],
+      "safety": {
+        "risk_level": "high",
+        "warnings": ["Wear gloves.", "Avoid inhaling mould spores in poorly ventilated spaces."]
+      },
+      "source": "Indoor moisture and mould guidance",
+      "confidence": 0.91
+    },
+    {
+      "id": "cleaning.showerhead.descale",
+      "title": "Descaling a showerhead",
+      "category": "cleaning",
+      "room": "bathroom",
+      "surface": "showerhead",
+      "problem": "limescale blocking a showerhead",
+      "tags": ["showerhead", "descale", "limescale"],
+      "instructions": [
+        "Remove the showerhead if possible.",
+        "Soak it in a vinegar and water solution for 20 to 30 minutes.",
+        "Scrub gently with a soft brush.",
+        "Rinse thoroughly before reattaching."
+      ],
+      "dos": ["Rinse well after descaling"],
+      "donts": ["Do not force removal if fixed tightly without proper guidance"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": ["Never mix vinegar with bleach."]
+      },
+      "source": "Bathroom descaling guidance",
+      "confidence": 0.85
+    },
+    {
+      "id": "cleaning.wood.furniture.general",
+      "title": "Cleaning wooden furniture safely",
+      "category": "cleaning",
+      "room": "living_room",
+      "surface": "wood",
+      "problem": "dust and sticky marks on wooden furniture",
+      "tags": ["wood", "furniture", "dust", "sticky marks", "polish"],
+      "instructions": [
+        "Dust the surface using a dry microfiber cloth.",
+        "For sticky marks, use a slightly damp cloth with minimal mild soap.",
+        "Wipe gently and avoid soaking the surface.",
+        "Dry immediately with a clean cloth."
+      ],
+      "dos": ["Use minimal moisture", "Test products on a hidden area first"],
+      "donts": ["Do not soak wood", "Do not use abrasive cleaners"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": ["Excess moisture may warp or damage wood finishes."]
+      },
+      "source": "Furniture cleaning practice",
+      "confidence": 0.84
+    },
+    {
+      "id": "cleaning.fabric.sofa.general",
+      "title": "Cleaning a fabric sofa safely",
+      "category": "cleaning",
+      "room": "living_room",
+      "surface": "fabric_upholstery",
+      "problem": "dust, marks, and general dirt on sofa fabric",
+      "tags": ["sofa", "fabric", "upholstery", "dust", "marks"],
+      "instructions": [
+        "Vacuum the sofa using an upholstery attachment.",
+        "Blot small marks with a damp cloth and mild fabric-safe cleaner.",
+        "Avoid soaking the fabric.",
+        "Allow the area to air dry fully."
+      ],
+      "dos": ["Blot gently", "Test cleaner on a hidden area first"],
+      "donts": ["Do not saturate the fabric", "Do not scrub aggressively"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": ["Check the furniture care label if available."]
+      },
+      "source": "Upholstery cleaning guidance",
+      "confidence": 0.83
+    },
+    {
+      "id": "cleaning.leather.sofa",
+      "title": "Cleaning a leather sofa",
+      "category": "cleaning",
+      "room": "living_room",
+      "surface": "leather",
+      "problem": "dust and marks on leather upholstery",
+      "tags": ["leather", "sofa", "upholstery"],
+      "instructions": [
+        "Dust using a soft dry cloth.",
+        "Wipe with a lightly damp cloth if needed.",
+        "Use a leather-safe cleaner for marks if appropriate.",
+        "Dry immediately."
+      ],
+      "dos": ["Use products intended for leather", "Wipe gently"],
+      "donts": ["Do not soak leather", "Do not use harsh cleaners"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": ["Test leather products on a small hidden area first."]
+      },
+      "source": "Leather care guidance",
+      "confidence": 0.8
+    },
+    {
+        "id": "cleaning.tv.screen",
+        "title": "Cleaning a TV or monitor screen safely",
+        "category": "cleaning",
+        "room": "living_room",
+        "surface": "screen",
+        "intent": "clean_electronics",
+        "object_type": "screen",
+        "material": "electronics",
+        "applies_when": [
+      "dust on screen",
+      "fingerprints on monitor",
+      "clean tv screen",
+      "smudges on television",
+      "clean computer screen"
+  ],
+  "problem": "dust and fingerprints on a screen",
+  "tags": ["tv", "monitor", "screen", "fingerprints", "electronics"],
+  "instructions": [
+    "Switch the device off and allow the screen to cool.",
+    "Use a dry microfiber cloth to remove dust.",
+    "If needed, use a screen-safe cleaner applied to the cloth, not directly to the screen.",
+    "Wipe gently."
+  ],
+  "dos": ["Use a microfiber cloth", "Switch off before cleaning"],
+  "donts": ["Do not spray liquid directly on the screen", "Do not use abrasive cloths"],
+  "safety": {
+    "risk_level": "medium",
+    "warnings": ["Avoid moisture entering electrical components."]
+  },
+  "source": "Electronics-safe cleaning guidance",
+  "confidence": 0.84
+  },
+    {
+      "id": "cleaning.dust.livingroom",
+      "title": "Reducing dust in a living room",
+      "category": "cleaning",
+      "room": "living_room",
+      "surface": "general",
+      "problem": "frequent dust build-up in living room",
+      "tags": ["dust", "living room", "vacuum", "microfiber"],
+      "instructions": [
+        "Dust surfaces with a microfiber cloth rather than a dry duster that redistributes particles.",
+        "Vacuum floors and soft furnishings regularly.",
+        "Clean high surfaces and overlooked corners.",
+        "Wash throws, cushion covers, and curtains where appropriate."
+      ],
+      "dos": ["Use microfiber cloths", "Vacuum soft furnishings"],
+      "donts": ["Do not dry-dust in a way that stirs dust into the air unnecessarily"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": []
+      },
+      "source": "General home hygiene guidance",
+      "confidence": 0.82
+    },
+    {
+      "id": "cleaning.bedding.routine",
+      "title": "Maintaining clean bedding",
+      "category": "cleaning",
+      "room": "bedroom",
+      "surface": "bedding",
+      "problem": "keeping bedding clean and fresh",
+      "tags": ["bedding", "bedroom", "laundry", "allergens", "freshness"],
+      "instructions": [
+        "Change bedding regularly.",
+        "Wash according to the fabric care label.",
+        "Dry fully before putting clean bedding back on the bed.",
+        "Air the mattress and room where possible."
+      ],
+      "dos": ["Wash bedding regularly", "Dry completely before reuse"],
+      "donts": ["Do not leave damp bedding folded or bundled"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": []
+      },
+      "source": "General household hygiene guidance",
+      "confidence": 0.81
+    },
+    {
+      "id": "cleaning.mattress.refresh",
+      "title": "Refreshing and cleaning a mattress surface",
+      "category": "cleaning",
+      "room": "bedroom",
+      "surface": "mattress",
+      "problem": "dust and freshness of a mattress",
+      "tags": ["mattress", "dust", "freshness", "bedroom"],
+      "instructions": [
+        "Strip bedding and vacuum the mattress surface using an upholstery attachment.",
+        "Spot-clean marks carefully using a small amount of fabric-safe solution if needed.",
+        "Allow the mattress to air before replacing bedding."
+      ],
+      "dos": ["Vacuum regularly", "Allow airflow"],
+      "donts": ["Do not soak the mattress"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": ["Ensure mattress is fully dry before remaking the bed."]
+      },
+      "source": "Bedroom cleaning guidance",
+      "confidence": 0.79
+    },
+    {
+      "id": "cleaning.wardrobe.dust",
+      "title": "Dusting wardrobes and bedroom furniture",
+      "category": "cleaning",
+      "room": "bedroom",
+      "surface": "bedroom_furniture",
+      "problem": "dust build-up on wardrobes and bedroom furniture",
+      "tags": ["wardrobe", "bedroom furniture", "dust"],
+      "instructions": [
+        "Dust surfaces with a microfiber cloth.",
+        "Wipe handles and frequently touched areas using mild soap solution if needed.",
+        "Dry surfaces afterwards."
+      ],
+      "dos": ["Dust regularly", "Wipe handles and contact points"],
+      "donts": ["Do not oversaturate surfaces"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": []
+      },
+      "source": "General furniture care guidance",
+      "confidence": 0.78
+    },
+    {
+      "id": "cleaning.carpet.coffee_stain",
+      "title": "Removing coffee stains from carpet",
+      "category": "stain_removal",
+      "room": "general",
+      "surface": "carpet",
+      "problem": "coffee spill on carpet",
+      "tags": ["carpet", "coffee stain", "spill", "stain removal"],
+      "instructions": [
+        "Blot the spill immediately with a clean dry cloth.",
+        "Apply a small amount of cold water to dilute the stain.",
+        "Blot again rather than rubbing.",
+        "Use a mild carpet-safe detergent if needed.",
+        "Rinse lightly and blot dry."
+      ],
+      "dos": ["Act quickly", "Blot instead of rubbing"],
+      "donts": ["Do not scrub aggressively", "Do not soak the carpet"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": ["Test detergent on a hidden area first."]
+      },
+      "source": "Carpet stain removal guidance",
+      "confidence": 0.89
+    },
+    {
+      "id": "cleaning.carpet.red_wine_stain",
+      "title": "Treating a red wine stain on carpet",
+      "category": "stain_removal",
+      "room": "general",
+      "surface": "carpet",
+      "problem": "red wine stain on carpet",
+      "tags": ["carpet", "red wine", "stain"],
+      "instructions": [
+        "Blot immediately with a clean cloth.",
+        "Apply cold water and continue blotting.",
+        "Use a carpet-safe stain treatment if needed.",
+        "Blot until the stain lightens."
+      ],
+      "dos": ["Act quickly", "Blot gently"],
+      "donts": ["Do not rub the stain deeper into fibres"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": ["Test stain products on an inconspicuous area first."]
+      },
+      "source": "Carpet stain removal guidance",
+      "confidence": 0.84
+    },
+    {
+      "id": "cleaning.fabric.coffee_stain",
+      "title": "Removing coffee stains from fabric",
+      "category": "stain_removal",
+      "room": "general",
+      "surface": "fabric",
+      "problem": "coffee stain on fabric",
+      "tags": ["fabric", "coffee stain", "laundry"],
+      "instructions": [
+        "Blot excess liquid with a clean cloth.",
+        "Rinse the stained area with cold water from the back if possible.",
+        "Apply mild liquid detergent to the stain.",
+        "Gently work it in and rinse.",
+        "Wash according to the care label."
+      ],
+      "dos": ["Use cold water first", "Check care label"],
+      "donts": ["Do not use hot water initially"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": ["Test delicate fabrics carefully."]
+      },
+      "source": "Fabric stain guidance",
+      "confidence": 0.85
+    },
+    {
+      "id": "cleaning.grease.stain.fabric",
+      "title": "Removing grease stains from fabric",
+      "category": "stain_removal",
+      "room": "general",
+      "surface": "fabric",
+      "problem": "grease stain on clothing or fabric",
+      "tags": ["grease stain", "fabric", "clothing", "laundry"],
+      "instructions": [
+        "Blot excess grease gently.",
+        "Apply a small amount of mild washing-up liquid to break down grease.",
+        "Rinse and wash according to the care label."
+      ],
+      "dos": ["Treat grease before washing", "Check fabric care label"],
+      "donts": ["Do not use hot heat drying until stain is removed"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": []
+      },
+      "source": "Fabric stain guidance",
+      "confidence": 0.83
+    },
+    {
+      "id": "cleaning.floor.wood",
+      "title": "Cleaning wooden floors safely",
+      "category": "cleaning",
+      "room": "general",
+      "surface": "wood_floor",
+      "problem": "dust and marks on wooden floor",
+      "tags": ["wood floor", "floor", "dust", "marks"],
+      "instructions": [
+        "Sweep or vacuum with an appropriate floor attachment.",
+        "Use a lightly damp mop with a wood-safe cleaning solution if needed.",
+        "Dry any excess moisture immediately."
+      ],
+      "dos": ["Use minimal moisture", "Use products suitable for wood floors"],
+      "donts": ["Do not soak the floor", "Do not use abrasive floor tools"],
+      "safety": {
+        "risk_level": "medium",
+        "warnings": ["Excess water can damage wood flooring."]
+      },
+      "source": "Floor care guidance",
+      "confidence": 0.84
+    },
+    {
+      "id": "cleaning.floor.tile",
+      "title": "Cleaning tiled floors",
+      "category": "cleaning",
+      "room": "general",
+      "surface": "tile_floor",
+      "problem": "dust and dirt on tiled floors",
+      "tags": ["tile floor", "floor", "mop", "tiles"],
+      "instructions": [
+        "Sweep or vacuum first.",
+        "Mop with warm water and mild floor cleaner.",
+        "Allow to dry or dry with a clean mop head if necessary."
+      ],
+      "dos": ["Sweep first", "Use suitable floor cleaner"],
+      "donts": ["Do not leave heavy pools of water on grout lines"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": ["Wet floors may be slippery while drying."]
+      },
+      "source": "Floor cleaning guidance",
+      "confidence": 0.82
+    },
+    {
+      "id": "cleaning.bin.kitchen.odour",
+      "title": "Cleaning a kitchen bin and reducing odours",
+      "category": "cleaning",
+      "room": "kitchen",
+      "surface": "bin",
+      "problem": "bad smells and residue in kitchen bin",
+      "tags": ["bin", "odour", "kitchen", "waste", "smell"],
+      "instructions": [
+        "Empty the bin completely.",
+        "Wash the inside with warm water and mild detergent.",
+        "Rinse and dry thoroughly.",
+        "Add a fresh liner and use odour-control material if suitable."
+      ],
+      "dos": ["Clean bins regularly", "Dry completely before inserting a new liner"],
+      "donts": ["Do not leave damp residue in the bottom of the bin"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": ["Wash hands after cleaning waste containers."]
+      },
+      "source": "General hygiene guidance",
+      "confidence": 0.81
+    },
+    {
+  "id": "cleaning.upholstery.fabric_couch.stains",
+  "title": "Cleaning a fabric couch with visible dirt or stains",
+  "object_type": "upholstery",
+  "items": ["couch", "sofa", "fabric couch", "fabric sofa", "upholstered furniture"],
+  "materials": ["fabric", "upholstery", "textile"],
+  "problem_types": ["stains", "dirt", "spill marks", "surface grime"],
+  "keywords": ["dirty couch", "dirty sofa", "stained couch", "fabric sofa stains"],
+  "instructions": [
+    "Vacuum the couch thoroughly to remove loose dust and debris.",
+    "Blot stained areas gently with a clean cloth.",
+    "Use a mild upholstery-safe cleaner on affected areas.",
+    "Test any cleaner on a small hidden area first.",
+    "Allow the couch to dry fully before use."
+  ],
+  "dos": [
+    "Use upholstery-safe products",
+    "Blot rather than scrub aggressively",
+    "Check the fabric care label if available"
+  ],
+  "donts": [
+    "Do not soak the fabric",
+    "Do not use bleach unless the manufacturer guidance allows it",
+    "Do not scrub harshly as this may damage the fabric"
+  ],
+  "safety": [
+    "Test cleaning products on a hidden area first",
+    "Ensure the room is ventilated while cleaning"
+  ]
+},
+  {
+  "id": "cleaning.cutlery.stuck_food",
+  "title": "Cleaning cutlery with stuck food",
+  "category": "cleaning",
+  "room": "kitchen",
+  "surface": "metal_cutlery",
+  "intent": "clean_utensils",
+  "object_type": "cutlery",
+  "material": "metal",
+  "applies_when": [
+    "food stuck on spoon",
+    "food stuck on fork",
+    "stuck food on knife",
+    "clean dirty cutlery",
+    "wash utensils with dried food"
+  ],
+  "problem": "food stuck on spoons, forks, or knives",
+  "tags": ["spoon", "fork", "knife", "cutlery", "utensils", "stuck food", "food residue"],
+  "instructions": [
+    "Rinse the cutlery under warm water first.",
+    "Soak the item in warm water with mild dish soap for a few minutes.",
+    "Use a soft sponge or dish brush to remove the stuck food.",
+    "Rinse thoroughly.",
+    "Dry fully with a clean cloth or allow to air dry."
+  ],
+  "dos": [
+    "Soak first if food is dried on",
+    "Use mild dish soap",
+    "Dry after washing"
+  ],
+  "donts": [
+    "Do not use steel wool on polished cutlery",
+    "Do not leave metal items wet for long periods if prone to water marks"
+  ],
+  "safety": {
+    "risk_level": "low",
+    "warnings": [
+      "Take care with sharp utensils when washing."
+    ]
+  },
+  "source": "General dishwashing and kitchen cleaning guidance",
+  "confidence": 0.88
+},
+    {
+      "id": "cleaning.dishes.grease",
+      "title": "Cleaning greasy plates and cookware",
+      "category": "cleaning",
+      "room": "kitchen",
+      "surface": "dishware",
+      "problem": "greasy plates and cookware",
+      "tags": ["plates", "dishes", "grease", "washing up"],
+      "instructions": [
+        "Scrape food debris into the bin first.",
+        "Soak greasy items in warm water with dish soap for a few minutes.",
+        "Wash using a sponge or brush.",
+        "Rinse thoroughly and dry."
+      ],
+      "dos": ["Soak greasy items first", "Use warm water if safe for the material"],
+      "donts": ["Do not stack items with heavy grease without pre-rinsing if possible"],
+      "safety": {
+        "risk_level": "low",
+        "warnings": ["Take care with sharp knives or broken items in washing water."]
+      },
+      "source": "Dishwashing hygiene guidance",
+      "confidence": 0.8
+    },
+    {
+      "id": "cleaning.desk.study_surface",
+      "title": "Cleaning a study desk or workstation",
+      "category": "cleaning",
+      "room": "bedroom",
+      "surface": "desk",
+      "problem": "dust and marks on study desk",
+      "tags": ["desk", "study area", "dust", "workstation"],
+      "instructions": [
+        "Remove items from the desk surface.",
+        "Dust the area with a microfiber cloth.",
+        "Wipe marks gently with a lightly damp cloth and mild cleaner if suitable.",
+        "Dry before replacing electronics or papers."
+      ],
+      "dos": ["Keep liquids minimal near electronics", "Dust regularly"],
+      "donts": ["Do not spray cleaner directly onto plugs or electrical devices"],
+      "safety": {
+        "risk_level": "medium",
+        "warnings": ["Keep moisture away from electrical equipment."]
+      },
+      "source": "General workspace cleaning guidance",
+      "confidence": 0.8
+    }
+  ]
+}

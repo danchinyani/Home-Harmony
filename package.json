@@ -1,0 +1,20 @@
+{
+  "name": "home-harmony-kb",
+  "version": "1.0.0",
+  "description": "Knowledge-based intelligent agent for domestic cleaning",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "multer": "^2.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

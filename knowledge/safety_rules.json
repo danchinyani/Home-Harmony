@@ -1,0 +1,41 @@
+{
+  "rules_version": "2.0",
+  "rules": [
+    {
+      "id": "rule.no_bleach_vinegar_mix",
+      "description": "Prevent mixing bleach and vinegar",
+      "conditions": {
+        "products": ["vinegar", "bleach"]
+      },
+      "message": "Never mix vinegar with bleach-based products. This can release harmful gases.",
+      "priority": "high"
+    },
+    {
+      "id": "rule.nonstick_protection",
+      "description": "Protect non-stick surfaces",
+      "conditions": {
+        "material": "nonstick"
+      },
+      "message": "Avoid abrasive tools such as steel wool to prevent damaging non-stick coatings.",
+      "priority": "medium"
+    },
+    {
+      "id": "rule.electrical_safety",
+      "description": "Avoid moisture on electronics",
+      "conditions": {
+        "material": "electronics"
+      },
+      "message": "Avoid moisture entering electrical components. Always power off before cleaning.",
+      "priority": "high"
+    },
+    {
+      "id": "rule.ventilation_required",
+      "description": "Ventilation for bathroom cleaning",
+      "conditions": {
+        "room": "bathroom"
+      },
+      "message": "Ensure good ventilation when cleaning bathroom surfaces.",
+      "priority": "medium"
+    }
+  ]
+}
